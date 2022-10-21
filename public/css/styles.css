@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+.header {
+    background-color: #EAC926;
+    flex-direction: column;
+    display: flex;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+.logobarra {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.logo {
+    width: 50%;
+}
+
+.barra-busqueda {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.barra-busqueda input {
+    padding: 6px;
+    border-style: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    width: 80%;
+}
+
+.barra-busqueda i {
+    align-self: center;
+    justify-self: center;
+    padding: 5px;
+}
+
+.lupa {
+    border-style: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: white;
+}
+
+.logobarra p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+}
+
+.logobarra p i {
+    padding: 3px;
+}
+
+li {
+    font-size: 12px;
+    list-style-type: none;
+}
+
+header nav {
+    margin: 10px 0px 10px 0px;
+    display: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+
+
+.botonmenu {
+    text-align: center;
+    padding-bottom: 0px;
+    justify-self: flex-end;
+    margin: auto;
+}
+
+.botonmenu i {
+    color: white;
+    background-color: #1259c3;
+    padding: 6px;
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+}
+
+.logoenvio {
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #39b54a;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    flex-direction: column;
+    text-align: right;
+    right: 20px;
+    top: -15px;
+    transition: all 700ms;
+    position: absolute;
+}
+
+.logoenvio i {
+    padding-top: 6px;
+    color: #39b54a;
+    text-align: center;
+}
+
+main section {
+    width: 90%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+main img {
+    width: 100%;
+}
+
+.articulo {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.articulo img {
+    width: 100%;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+h3 {
+    font-size: 24px;
+    color: #666;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.descripcion {
+    width: 100%;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top: 1px;
+    border-top-color: #ebebeb;
+    border-top-style: solid;
+    position: relative;
+}
+
+.precio {
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+    width: 70%;
+    text-align: left;
+}
+
+.descrip {
+    font-size: 16px;
+    color: #666;
+    display: none;
+}
+
+footer {
+    flex-direction: column;
+    color: #666;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    background-color: white;
+
+}
+
+footer section {
+    width: 70%;
+    text-align: center;
+    margin: 15px 0px 15px 0px;
+}
+
+footer section h4 {
+    font-size: 16px;
+}
+
+footer section i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+.listacuenta, .listapag {
+    display: none;
+}
+
+.informacionProduc {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+@media screen and (min-width: 361px) {
+    .producto{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    .descripcion {
+        display: flex;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .listapag, .listacuenta {
+        display: contents;
+    }
+    .botonmenu i{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .descripcion {
+        display: flex;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .producto{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .articulo img{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .producto article{
+        width: 24%;
+        margin: 3px;
+    }
+    .descrip{
+        display: flex;
+    }
+    .main{
+        justify-content: space-between;
+    }
+}
